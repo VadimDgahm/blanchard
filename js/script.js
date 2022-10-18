@@ -10,6 +10,14 @@ burger.addEventListener('click',
 
     document.body.classList.toggle('stop-scroll');
   });
+  burger.addEventListener('click', 
+  function () {
+    burger.classList.toggle('burger-active');
+
+    menu.classList.toggle('nav__list-active');
+
+    document.body.classList.toggle('stop-scroll');
+  });
 
 menuLinks.forEach(function (el) {
   el.addEventListener('click', 
